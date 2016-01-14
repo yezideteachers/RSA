@@ -75,6 +75,7 @@ public class Asymetric{
 				out.close();
 				
 				// alice decrypt the message
+				System.out.println("check ------ > " +Alice.decrypt(aCiphered));
 				byte[] aDeciphered = Alice.decrypt(aCiphered);
 				System.out.println("Deciphered Text== \n"+new String(aDeciphered));
 				out = new FileOutputStream(new File(argv[3]));
